@@ -8,7 +8,9 @@ transformation, etc.). Motivation for choosing the particular problem.
 
 Because of the nature of our problem (image classification) we need to aprouch this with that in mind 
 
-- normalization/feature selection are kind of 
+- We choose to use normalization : Normalizing the pixel values of the images can help improve convergence during training. This typically involves scaling the pixel values to a specific range, such as [0, 1] or [-1, 1]. we did [0, 1]
+
+thats it 
 
 ## Data visualization
 > (histograms, box plots, other plots).
@@ -26,6 +28,14 @@ Imagens msm com as labels
 graphically the cost function trajectory over iterations. Training with regularized and nonregularized cost function.
 
 show cost function tajectory and accuracy
+
+
+Using a form of validation:
+
+Best validation accuracy: 0.9534930417187959 
+Best learning rate: 0.001
+Best momentum coefficient: 0.99
+
 
 ##  Model hyper-parameter selection 
 > regularization parameter lambda, number of NN hidden
