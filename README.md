@@ -59,30 +59,25 @@ sword   110     784     123     120     23792
 
  
 Apple
-        Accuracy: 0.98777611321 = (28078 + 23692 + 22846 + 25550 + 23792)/(28078 + 23692 + 22846 + 25550 + 23792 + 320 + 215 + 128 + 131 + 122 + 181 + 327 + 110)
-        Precision:
-        Recall:
-        F1 Score: 
+        Precision: 0.974321605 (28078 / (28078 + 122 + 181 + 327 + 110))
+        Recall: 0.972499307 (28078 / (28078 + 320 + 215 + 128 + 131))
+        F1 Score: 0.9734096031300774 
 
 axe
-        Accuracy: 
-        Precision:
+        Precision: 0.922909119 ( 23692/(320 + 23692 + 522 + 353 + 784))
         Recall:
         F1 Score: 
 book
-        Accuracy: 
         Precision:
         Recall:
         F1 Score: 
 
 house
-        Accuracy: 
         Precision:
         Recall:
         F1 Score: 
 
 sword
-        Accuracy: 
         Precision:
         Recall:
         F1 Score: 
