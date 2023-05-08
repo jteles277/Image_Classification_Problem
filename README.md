@@ -58,33 +58,28 @@ house   327     353     677     25550   121
 sword   110     784     123     120     23792
 
  
-Apple
-        Accuracy: 0.98777611321 = (28078 + 23692 + 22846 + 25550 + 23792)/(28078 + 23692 + 22846 + 25550 + 23792 + 320 + 215 + 128 + 131 + 122 + 181 + 327 + 110)
+Apple 
         Precision:
         Recall:
         F1 Score: 
 
-axe
-        Accuracy: 
+axe  
         Precision:
         Recall:
         F1 Score: 
-book
-        Accuracy: 
-        Precision:
-        Recall:
+book 
+        Precision: 0.94498676373 = 22846 / (215 + 315 + 22846 + 677 + 123)
+        Recall: 0.95722126785 = 22846 /(181 + 522 + 22846 + 203 + 115)
         F1 Score: 
 
-house
-        Accuracy: 
-        Precision:
-        Recall:
+house 
+        Precision: 0.97739183657 = 25550 / (128 + 140 + 203 + 25550 + 120)
+        Recall: 0.94531596862 = 25550 / (327 + 353 + 677 + 25550 + 121)
         F1 Score: 
 
-sword
-        Accuracy: 
-        Precision:
-        Recall:
+sword 
+        Precision: 0.96401944894 = 23792 / (131 + 521 + 115 + 121 + 23792)
+        Recall: 0.95439046893 = 23792 / (110 + 784 + 123 + 120 + 23792)
         F1 Score: 
 
 ## Performance comparison between the models.
