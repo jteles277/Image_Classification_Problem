@@ -65,8 +65,8 @@ Apple
 
 axe
         Precision: 0.922909119 ( 23692/(320 + 23692 + 522 + 353 + 784))
-        Recall:
-        F1 Score: 
+        Recall: 0.955707947 ( 23692 / (122 + 23692 + 315 + 140 + 521) )
+        F1 Score: 0.9390222151714112
 book
         Precision:
         Recall:
