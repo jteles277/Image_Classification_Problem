@@ -48,7 +48,7 @@ get the hyoer parammeters -> greed search cv
 ## For a classification problem, you need to present the confusion Matrix 
 > (accuracy, precision,
 recall, F1 score, etc.).
-
+ 
         apple   axe     book    house   sword
 
 apple   28078   320     215     128     131
@@ -56,6 +56,36 @@ axe     122     23692   315     140     521
 book    181     522     22846   203     115
 house   327     353     677     25550   121
 sword   110     784     123     120     23792
+
+ 
+Apple
+        Accuracy: 0.98777611321 = (28078 + 23692 + 22846 + 25550 + 23792)/(28078 + 23692 + 22846 + 25550 + 23792 + 320 + 215 + 128 + 131 + 122 + 181 + 327 + 110)
+        Precision:
+        Recall:
+        F1 Score: 
+
+axe
+        Accuracy: 
+        Precision:
+        Recall:
+        F1 Score: 
+book
+        Accuracy: 
+        Precision:
+        Recall:
+        F1 Score: 
+
+house
+        Accuracy: 
+        Precision:
+        Recall:
+        F1 Score: 
+
+sword
+        Accuracy: 
+        Precision:
+        Recall:
+        F1 Score: 
 
 ## Performance comparison between the models.
 
