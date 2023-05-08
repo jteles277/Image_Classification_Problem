@@ -36,4 +36,3 @@ hold off;
 xlabel('x');
 ylabel('y');
 grid on
-legend('Logisstic Regression', 'MLP NN');
