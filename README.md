@@ -44,6 +44,18 @@ instead of just one or several randomly chosen values.
 
 get the hyoer parammeters -> greed search cv
 
+learning rate=0.001 
+        Training accuracy: 0.9582252135365985
+        Testing accuracy: 0.9538174011090002
+
+learning rate=0.01
+        Training accuracy: 0.22367282949508055
+        Testing accuracy: 0.22297391223761642
+
+learning rate=0.0001
+        Training accuracy: 0.9484365105107888
+        Testing accuracy: 0.9454381168620546
+
 
 ## For a classification problem, you need to present the confusion Matrix 
 > (accuracy, precision,

@@ -13,7 +13,7 @@ import os
 class Model:
 
     @staticmethod
-    def train_model(data_folder):
+    def train_model(data_folder, conf, learning_rate):
 
         print("\n loading files... \n")  
 
@@ -40,7 +40,7 @@ class Model:
         
         print("\n Training Neual Network... \n") 
         # Train a neural network classifier
-        nn = MLPClassifier(hidden_layer_sizes=(784,300,60,50,40,10), max_iter=100) # nn = MLPClassifier(hidden_layer_sizes=(784,300,60,50,40,10), max_iter=100, verbose=2)
+        nn = MLPClassifier(hidden_layer_sizes=conf, max_iter=100, learning_rate='constant', learning_rate_init=learning_rate ) # nn = MLPClassifier(hidden_layer_sizes=(784,300,60,50,40,10), max_iter=100, verbose=2)
 
         # Iterate over the data in batches of 100 and call partial_fit for each batch
 
@@ -64,7 +64,7 @@ class Model:
 
        # Get unique labels
         labels = np.unique(y_test)
-
+        """
         # Calculate the confusion matrix
         conf_matrix = confusion_matrix(y_test, y_pred, labels=labels)
 
@@ -76,8 +76,8 @@ class Model:
             row = " ".join(str(x) for x in conf_matrix[i])
             print(f"True {labels[i]} {row}")
 
-        print(conf_matrix)
-        return nn, conf_matrix 
+        print(conf_matrix)"""
+        return nn
     
     @staticmethod
     def train_LR_model(data_folder):
@@ -324,8 +324,18 @@ class Model:
 if __name__ == "__main__":
 
     
-    model = Model.train_model("training_data")
-    #Model.save_model(model, "loss")
+
+    conf =  (784, 300, 60)
+    print( "conf=" + str(conf) )
+    model = Model.train_model("training_data", conf, 0.001)
+    
+    nn_score_train, nn_score_test= Model.get_accuracy(model, "training_data") 
+    print("\tTraining accuracy:", nn_score_train)
+    print("\tTesting accuracy:", nn_score_test) 
+    
+   
+
+    Model.save_model(model, "pika")
     
     #model = Model.train_LR_model("training_data")
     #Model.save_model(model, "LR2")
